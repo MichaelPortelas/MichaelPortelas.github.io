@@ -1,3 +1,20 @@
-main li{
-    list-style-type: circle;
+ol{
+    list-style-type: none;
+    counter-reset: compteur;
+}
+
+ol li{
+    counter-increment: compteur;
+}
+
+ol li::before{
+    margin-right: 1rem;
+    margin-left: 1rem;
+    padding-right: 5px;
+    padding-left: 5px;
+    content: counter(compteur);
+    color: #fff;
+    border: 2px solid $colour-primary;
+    background-color: $colour-primary;
+    border-radius:45px;
 }
