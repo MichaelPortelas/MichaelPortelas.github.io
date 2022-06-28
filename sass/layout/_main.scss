@@ -5,15 +5,26 @@ ol{
 
 ol li{
     margin-top: 1rem;
+    padding-top: 15px;
+    padding-bottom: 15px;
     counter-increment: compteur;
     border: 2px solid #f6f6f6;
     background-color: #f6f6f6;
-    border-radius:45px;
+    border-radius:20px;
     box-shadow: 0px 5px 5px #999;
 }
 
+ol li:hover{
+    background-color: $colour-secondary-light;
+    transition: .3s;
+
+    i{
+        color: $colour-primary;
+    }
+} 
+
 ol li::before{
-    margin-left: -0.5rem;
+    margin-left: -0.9rem;
     margin-right: 1rem;
     padding-right: 5px;
     padding-left: 5px;
