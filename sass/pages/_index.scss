@@ -19,6 +19,7 @@
 
 #restaurant {
     @include margin;
+    padding-bottom: 3rem;
     background-color: $colour-background-light;
     display: flex;
     flex-direction: column;

@@ -1,0 +1,21 @@
+footer{
+    margin-left: -1rem;
+    padding: 0.5rem;
+    background: $colour-background-footer;
+    color: $colour-white;
+
+    ul{
+        list-style-type: none;
+
+        li a {
+            text-decoration: none;
+            color: $colour-white;
+        }
+    }
+
+    i {
+        font-size: 0.7rem;
+        margin: -0.5rem;
+        padding: -0.5rem;
+    } 
+}
