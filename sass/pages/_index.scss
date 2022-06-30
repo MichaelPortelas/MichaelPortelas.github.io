@@ -1,6 +1,5 @@
 #introduction {
-    margin-left: -1rem;
-    margin-right: -0rem;
+    @include margin;
     padding-bottom: 3rem;
     display: flex;
     flex-direction: column;
@@ -10,5 +9,15 @@
 
 .intro_town {
     margin: -0rem;
+    background-color: $colour-background-dark;
+}
+
+#howto {
+    @include margin;
+    padding-bottom: 3rem;
+}
+
+#restaurant {
+    @include margin;
     background-color: $colour-background-dark;
 }
