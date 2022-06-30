@@ -17,25 +17,25 @@ ol li{
         color: #000;
         text-decoration: none;
     }
-}
 
-ol li:hover{
-    background-color: $colour-secondary-light;
-    transition: .3s;
-
-    i{
-        color: $colour-primary;
+    &:hover{
+        background-color: $colour-secondary-light;
+        transition: .3s;
+    
+        i{
+            color: $colour-primary;
+        } 
     }
-} 
 
-ol li::before{
-    margin-left: -0.9rem;
-    margin-right: 1rem;
-    padding-right: 5px;
-    padding-left: 5px;
-    content: counter(compteur);
-    color: #fff;
-    border: 2px solid $colour-primary;
-    background-color: $colour-primary;
-    border-radius:45px;
+    &::before{
+        margin-left: -0.9rem;
+        margin-right: 1rem;
+        padding-right: 5px;
+        padding-left: 5px;
+        content: counter(compteur);
+        color: #fff;
+        border: 2px solid $colour-primary;
+        background-color: $colour-primary;
+        border-radius:45px;
+    }
 }

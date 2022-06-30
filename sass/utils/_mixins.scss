@@ -8,14 +8,16 @@
 
 @mixin btn {
     padding: $grid-gutter;
-    @include border($colour-secondary);
+    margin-left: $grid-gutter;
+    margin-right: $grid-gutter;
     border-radius: 45px;
     color: $colour-white;
-    background: $colour-secondary;
+    background: -webkit-linear-gradient(top, $colour-secondary, $colour-primary);
     cursor: pointer;
     &:hover{
-        background: $colour-primary;
+        background: -webkit-linear-gradient(top, $colour-primary, $colour-secondary);
         color: $colour-white;
+        transition: .3s;
     }
    
 }
