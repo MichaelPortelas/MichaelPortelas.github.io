@@ -20,4 +20,69 @@
 #restaurant {
     @include margin;
     background-color: $colour-background-light;
+    display: flex;
+    flex-direction: column;
+}
+
+.card{
+    height: 17rem;
+    border-radius: 25px;
+    background-color: white;
+    box-shadow: 0px 5px 20px #999;
+
+    a{
+        color: #000;
+        text-decoration: none;
+    }
+
+    &:hover .card-image img{
+        width: 160%;
+        filter:grayscale(0);
+    }
+}
+
+.card-image{
+    height: 175px;
+    width: 100%;
+    margin-top: -1.7rem;
+    margin-left: -0rem;
+    margin-right: -0rem;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+    overflow: hidden;
+    position: relative;
+    
+    img {
+        width: 120%;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-60%, -60%);
+        filter: grayscale(1);
+        transition-property: filter, width;
+        transition-duration: .3s;
+        transition-timing-function: ease;
+        
+    }
+    span{
+        position: absolute;
+        padding-left: 13px;
+        padding-right: 13px;
+        color: #008766;
+        @include border($colour-tertiary);
+        border-radius: 5px;
+        top: 13px;
+        right: 10px;
+        background-color: $colour-tertiary;
+        z-index: 1;
+    }
+}
+
+.card-body{
+    display: flex;
+    justify-content: space-between;
+    i{
+        padding-top: 23px;
+        font-size: 21px;
+    }
 }
