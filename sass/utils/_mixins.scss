@@ -10,7 +10,7 @@
     padding: $grid-gutter;
     @include border($colour-secondary);
     border-radius: 45px;
-    color: $colour-primary;
+    color: $colour-white;
     background: $colour-secondary;
     cursor: pointer;
     &:hover{
