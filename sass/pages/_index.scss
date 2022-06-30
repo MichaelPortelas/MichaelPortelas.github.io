@@ -35,10 +35,26 @@
         text-decoration: none;
     }
 
-    &:hover .card-image img{
-        width: 160%;
-        filter:grayscale(0);
+    &:hover {
+        .card-image img{
+                width: 160%;
+                filter:grayscale(0);
+            }
     }
+    
+    
+}
+
+.card-note > .fa-regular + .fa-solid,
+.card-note:hover > .fa-regular {
+    display: none;
+}
+.card-note:hover > .fa-regular + .fa-solid {
+    display: inherit;
+    background: -webkit-linear-gradient($colour-primary, $colour-secondary);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    transition: .3s;
 }
 
 .card-image{
