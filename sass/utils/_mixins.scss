@@ -12,6 +12,7 @@
     margin-right: $grid-gutter;
     border-radius: 45px;
     color: $colour-white;
+    text-align: center;
     background: -webkit-linear-gradient(top, $colour-secondary, $colour-primary);
     cursor: pointer;
     &:hover{

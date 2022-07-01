@@ -13,6 +13,10 @@ h1 {
     font-style: italic;
 }
 
+.menu-body h1{
+    font-size: 1.5rem;
+}
+
 h2 {
     font-family: 'Roboto', sans-serif;
     font-weight: 900;
@@ -31,6 +35,21 @@ h4 {
     font-size: 1.5rem;
 }
 
+h5 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 100;
+    font-size: 2rem;
+    position: relative;
+    border-bottom: 3px solid transparent;
+    border-image: linear-gradient(to right, $colour-tertiary 80px, $colour-background-light 50px);
+    border-image-slice: 1;
+    
+}
+
+.plat-title p {
+    font-size: 0.9rem;
+}
+    
 textarea {
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
