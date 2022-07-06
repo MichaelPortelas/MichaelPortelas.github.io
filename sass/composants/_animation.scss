@@ -1,12 +1,35 @@
-.vignets-fadein {
-    animation: fadein 2s;
+.vignets-fadein-entree {
+    @include menu-anim;
+}
+
+.vignets-fadein-plat {
+    @include menu-anim;
+}
+
+.vignets-fadein-dessert {
+    @include menu-anim;
+}
+
+@for $i from 1 through 4 {
+    .vignets-fadein-entree:nth-child(#{$i}n) {
+        animation-delay: #{$i * 0.1}s;
+    }
+    .vignets-fadein-plat:nth-child(#{$i}n) {
+        animation-delay: #{$i * 0.1}s;
+    }
+    .vignets-fadein-dessert:nth-child(#{$i}n) {
+        animation-delay: #{$i * 0.1}s;
+    }
 }
 
 @keyframes fadein {
     from {
-        opacity:0;
+        transform: translateY(10vh);
+        opacity: 0;
     }
     to {
-        opacity:1;
+        transform: translateY(0px);
+        opacity: 1;
     }
 }
+

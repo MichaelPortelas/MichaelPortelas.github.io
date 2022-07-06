@@ -26,3 +26,9 @@
 @mixin margin {
     margin: -1rem -0rem -0.5rem -1rem;
 }
+
+@mixin menu-anim {
+    animation-name: fadein;
+    animation-duration: 3000ms;
+    animation-timing-function: ease-in-out;
+}
