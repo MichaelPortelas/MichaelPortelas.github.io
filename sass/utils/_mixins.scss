@@ -8,10 +8,13 @@
 
 @mixin btn {
     padding: $grid-gutter;
+    margin-top: $grid-gutter;
     margin-left: $grid-gutter;
     margin-right: $grid-gutter;
     border-radius: 45px;
     color: $colour-white;
+    border: none;
+    font-size: 1.5rem;
     text-align: center;
     background: -webkit-linear-gradient(top, $colour-secondary, $colour-primary);
     cursor: pointer;
@@ -29,6 +32,5 @@
 
 @mixin menu-anim {
     animation-name: fadein;
-    animation-duration: 5000ms;
     animation-timing-function: ease-in-out;
 }

@@ -13,12 +13,15 @@
 @for $i from 1 through 4 {
     .vignets-fadein-entree:nth-child(#{$i}n) {
         animation-delay: #{$i * 0.1}s;
+        animation-duration: #{$i * 1000}ms;
     }
     .vignets-fadein-plat:nth-child(#{$i}n) {
         animation-delay: #{$i * 0.1}s;
+        animation-duration: #{$i * 1000}ms;
     }
     .vignets-fadein-dessert:nth-child(#{$i}n) {
         animation-delay: #{$i * 0.1}s;
+        animation-duration: #{$i * 1000}ms;
     }
 }
 

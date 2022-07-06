@@ -43,11 +43,24 @@ h5 {
     border-bottom: 3px solid transparent;
     border-image: linear-gradient(to right, $colour-tertiary 80px, $colour-background-light 50px);
     border-image-slice: 1;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
     
 }
 
-.plat-title p {
+.plat-title{ 
+    h3 {
+        margin: 0px;
+    }
+
+    p {
     font-size: 0.9rem;
+    margin: 0px;
+    }
+}
+
+.plat-tarif p {
+    margin: 0px;
 }
     
 textarea {
