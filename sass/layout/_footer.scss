@@ -1,13 +1,18 @@
 footer{
-    margin-left: -1rem;
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
     padding: 0.5rem;
     background: $colour-background-footer;
     color: $colour-white;
 
     ul{
+        padding: 0px;
+        margin: 0px;
         list-style-type: none;
 
         li a {
+            margin: 0px;
             text-decoration: none;
             color: $colour-white;
         }
@@ -15,7 +20,5 @@ footer{
 
     i {
         font-size: 0.7rem;
-        margin: -0.5rem;
-        padding: -0.5rem;
     } 
 }

@@ -1,10 +1,21 @@
+main {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+}
+
 #introduction {
-    @include margin;
+    margin: 0px;
     padding-bottom: 3rem;
     display: flex;
     flex-direction: column;
     text-align: center;
     background-color: $colour-background-light;
+
+    p {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+    }
 }
 
 .intro_town {
@@ -13,12 +24,17 @@
 }
 
 #howto {
-    @include margin;
+    display: flex;
+    flex-direction: column;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     padding-bottom: 3rem;
 }
 
 #restaurant {
-    @include margin;
+    margin: 0px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
     padding-bottom: 3rem;
     background-color: $colour-background-light;
     display: flex;
@@ -26,6 +42,7 @@
 }
 
 .card{
+    margin: 0.5rem;
     height: 17rem;
     border-radius: 25px;
     background-color: white;
@@ -61,7 +78,7 @@
 .card-image{
     height: 175px;
     width: 100%;
-    margin-top: -1.7rem;
+    //margin-top: -1.7rem;
     margin-left: -0rem;
     margin-right: -0rem;
     border-top-left-radius: 25px;
@@ -72,8 +89,8 @@
     img {
         width: 120%;
         position: absolute;
-        top: 50%;
-        left: 50%;
+        top: 60%;
+        left: 60%;
         transform: translate(-60%, -60%);
         filter: grayscale(1);
         transition-property: filter, width;
@@ -98,6 +115,8 @@
 .card-body{
     display: flex;
     justify-content: space-between;
+    margin-left: 0.5rem;
+    margin-right: 0.5rem;
     i{
         padding-top: 23px;
         font-size: 21px;
