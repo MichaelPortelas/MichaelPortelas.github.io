@@ -36,3 +36,18 @@
     }
 }
 
+.vignets-hover {
+    animation-name: menuhover;
+    animation-duration: 2000ms;
+}
+
+@keyframes menuhover {
+    from {
+        opacity: 0;
+        transform: scaleX(0);
+    }
+    to {
+        opacity: 1;
+        transform: scaleX(1);
+    }
+}
