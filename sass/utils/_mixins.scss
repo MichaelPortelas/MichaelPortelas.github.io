@@ -18,8 +18,10 @@
     text-align: center;
     background: -webkit-linear-gradient(top, $colour-secondary, $colour-primary);
     cursor: pointer;
+    box-shadow: 0px 5px 20px #999;
+
     &:hover{
-        background: -webkit-linear-gradient(top, $colour-primary, $colour-secondary);
+        filter: drop-shadow(0px 5px 5px rgb(51, 50, 50)) brightness(1.2);
         color: $colour-white;
         transition: .3s;
     }
