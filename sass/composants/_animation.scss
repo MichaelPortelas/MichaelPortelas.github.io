@@ -52,12 +52,13 @@
     }
 }
 
+// Font Full screen opacity timer 3s
 .loading {
     position: fixed;
     z-index: 999;
     height: 2em;
     width: 2em;
-    overflow: show;
+    overflow: visible;
     margin: auto;
     top: 0;
     left: 0;
@@ -66,7 +67,8 @@
     animation: loader 1s ease-in-out 3s forwards;
 }
 
-.loading:before {
+// Font gradient full-screen
+.loading::before {
     content: '';
     display: block;
     position: fixed;
@@ -79,19 +81,22 @@
 
 @keyframes loader {
     from{
+        visibility: Visible;
         opacity: 1;
     }
     to{
         opacity: 0;
+        visibility: hidden;
     }
 }
 
+// Bordure arrondi rose
 .spinner {
     position: fixed;
     z-index: 999;
     width: 48px;
     height: 48px;
-    overflow: show;
+    overflow: visible;
     margin: auto;
     top: 0;
     left: 0;
@@ -106,6 +111,8 @@
 }
 
 .spinner::after,
+
+// bordure arrondie verte à rotation inverse
 .spinner::before {
     content: '';  
     box-sizing: border-box;
@@ -124,6 +131,8 @@
     animation: rotationBack 0.5s linear infinite;
     transform-origin: center center;
 }
+
+// bordure arrondie violette
 .spinner::before {
     width: 32px;
     height: 32px;
