@@ -46,6 +46,9 @@
     padding: 0.5rem;
 
     &:hover{
+
+        cursor: pointer;
+
         .plat-tarif-base{
             opacity: 0;
         }
