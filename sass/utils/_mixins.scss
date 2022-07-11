@@ -1,3 +1,35 @@
+/* Media query */
+
+/* from... */
+@mixin media-min($_key) {
+    @media screen and (min-width: map-get($breakpoints, $_key)) {
+        &{ @content; }
+    }
+}
+
+/* to... */
+@mixin media-max($_key) {
+    @media screen and (max-width: (map-get($breakpoints, $_key) - 1)) {
+        &{ @content; }
+    }
+}
+
+/* from... to... */
+@mixin media-between($_keymin, $_keymax) {
+    @media screen and (min-width: map-get($breakpoints, $_keymin)) and (max-width: (map-get($breakpoints, $_keymax) - 1)) {
+        &{ @content; }
+    }
+}
+
+/* at... */
+@mixin media($_key) {
+    @media screen and (min-width: map-get($breakpoints, $_key)) and (max-width: (map-get($breakpoints, nth(map-keys($breakpoints), index(map-keys($breakpoints), $_key) + 1)) - 1)) {
+        &{ @content; }
+    }
+}
+
+/* --------- */
+
 @mixin heading-shadow($colour:lightness-shift($colour-primary), $offset: $heading-shadow-size){
     text-shadow: $offset $offset $colour;
 }

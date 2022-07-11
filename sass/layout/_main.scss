@@ -1,42 +1,70 @@
-ol{
+#howto nav ol{
     list-style-type: none;
     counter-reset: compteur;
     padding-left: 1rem;
-}
 
-ol li{
-    margin-top: 1rem;
-    padding-top: 15px;
-    padding-bottom: 15px;
-    counter-increment: compteur;
-    @include border($colour-background-light);
-    background-color: $colour-background-light;
-    border-radius:20px;
-    box-shadow: 0px 5px 5px #999;
-
-    a{
-        color: #000;
-        text-decoration: none;
+    @include media-between("tablet-up", "desktop-up"){
+        display: flex;
+        justify-content: space-around;
     }
 
-    &:hover{
-        background-color: $colour-secondary-light;
-        transition: .3s;
+    @include media-min("desktop-up"){
+        display: flex;
+        flex-direction: column;
+    }
     
-        i{
-            color: $colour-primary;
-        } 
+    li{
+        margin-top: 1rem;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        counter-increment: compteur;
+        @include border($colour-background-light);
+        background-color: $colour-background-light;
+        border-radius:20px;
+        box-shadow: 0px 5px 5px #999;
+
+        @include media-between("tablet-up", "desktop-up"){
+            display: flex;
+            align-items: center;
+            padding-right: 5px;
+
+            i {
+                margin-right: 3px;
+            }
+
+        }
+          
+        a{
+            color: #000;
+            text-decoration: none;
+        }
+    
+        &:hover{
+            background-color: $colour-secondary-light;
+            transition: .3s;
+        
+            i{
+                color: $colour-primary;
+            } 
+        }
+    
+        &::before{
+            margin-left: -0.9rem;
+            margin-right: 1rem;
+            padding-right: 5px;
+            padding-left: 5px;
+            content: counter(compteur);
+            color: #fff;
+            border: 2px solid $colour-primary;
+            background-color: $colour-primary;
+            border-radius:45px;
+
+            @include media-between("tablet-up", "desktop-up"){
+                margin-right: .2rem;
+                padding-right: 9px;
+                padding-left: 9px;
+            }
+       }
     }
 
-    &::before{
-        margin-left: -0.9rem;
-        margin-right: 1rem;
-        padding-right: 5px;
-        padding-left: 5px;
-        content: counter(compteur);
-        color: #fff;
-        border: 2px solid $colour-primary;
-        background-color: $colour-primary;
-        border-radius:45px;
-    }
 }

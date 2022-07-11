@@ -4,6 +4,16 @@ main {
     margin: 0px;
 }
 
+#page-up{
+    display: flex;
+    flex-direction: column;
+
+    @include media-min("desktop-up"){
+       flex-direction: row;
+       justify-content: space-evenly;
+    }
+}
+
 #introduction {
     margin: 0px;
     padding-bottom: 3rem;
@@ -11,6 +21,10 @@ main {
     flex-direction: column;
     text-align: center;
     background-color: $colour-background-light;
+
+    @include media-min("desktop-up"){
+        order: 2;
+    }
 
     p {
         padding-left: 0.5rem;
@@ -29,6 +43,10 @@ main {
     padding-left: 0.5rem;
     padding-right: 0.5rem;
     padding-bottom: 3rem;
+
+    @include media-min("desktop-up"){
+        order: 1;
+    }
 }
 
 #restaurant {
@@ -64,9 +82,11 @@ main {
 }
 
 .card-note > .fa-regular + .fa-solid,
+
 .card-note:hover > .fa-regular {
     display: none;
 }
+
 .card-note:hover > .fa-regular + .fa-solid {
     display: inherit;
     background: -webkit-linear-gradient($colour-primary, $colour-secondary);
