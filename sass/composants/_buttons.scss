@@ -6,4 +6,8 @@
         align-items: center;
         align-self: center;
     }
+
+    @include media-min("desktop-up"){
+        width: 70%;
+    }
 }
