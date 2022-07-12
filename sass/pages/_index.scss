@@ -49,7 +49,17 @@ main {
     }
 }
 
+
 #restaurant {
+    display: flex;
+    flex-direction: column;
+    margin: 0px;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    padding-bottom: 3rem;
+}
+
+#restaurant-cards {
     margin: 0px;
     padding-left: 0.5rem;
     padding-right: 0.5rem;
@@ -57,6 +67,12 @@ main {
     background-color: $colour-background-light;
     display: flex;
     flex-direction: column;
+
+    @include media-min("tablet-up"){
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 }
 
 .card{
@@ -65,6 +81,10 @@ main {
     border-radius: 25px;
     background-color: white;
     box-shadow: 0px 5px 20px #999;
+
+    @include media-min("tablet-up"){
+        width: 40%;
+    }
 
     a{
         color: #000;
