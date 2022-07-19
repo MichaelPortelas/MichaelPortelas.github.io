@@ -14,7 +14,11 @@
     background-color: $colour-background-light;
     border-top-left-radius: 45px;
     border-top-right-radius: 45px;
-   z-index: 1;
+    z-index: 1;
+
+    @include media-min("desktop-up"){
+        margin-top: -30rem;
+    }
 }
 
 .menu-title {
