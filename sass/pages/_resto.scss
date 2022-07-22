@@ -42,6 +42,11 @@
 .menu-detail{
     display: flex;
     flex-wrap: wrap;
+
+    @include media-max("tablet-up"){
+        flex-direction: column;
+    }
+    
 }
 
 .plat {
