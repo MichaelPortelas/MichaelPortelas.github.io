@@ -2,7 +2,7 @@ footer{
     display: flex;
     flex-direction: column;
     margin: 0px;
-    padding: 0.5rem;
+    padding-left: 1.5rem;
     background: $colour-background-footer;
     color: $colour-white;
 
@@ -20,5 +20,6 @@ footer{
 
     i {
         font-size: 0.7rem;
+        padding-right: 0.6rem;
     } 
 }
