@@ -23,6 +23,10 @@
         border-radius:20px;
         box-shadow: 0px 5px 5px #999;
 
+        i {
+            padding-right: 1rem;
+        }
+
         @include media-between("tablet-up", "desktop-up"){
             display: flex;
             align-items: center;
