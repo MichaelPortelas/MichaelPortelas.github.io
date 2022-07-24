@@ -95,7 +95,7 @@ main {
     &:hover {
         .card-image img{
                 width: 160%;
-                filter:grayscale(0);
+                filter:grayscale(1);
             }
     }
     
@@ -132,7 +132,7 @@ main {
         top: 60%;
         left: 60%;
         transform: translate(-60%, -60%);
-        filter: grayscale(1);
+        filter: grayscale(0);
         transition-property: filter, width;
         transition-duration: .3s;
         transition-timing-function: ease;
