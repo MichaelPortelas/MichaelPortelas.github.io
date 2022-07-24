@@ -162,3 +162,12 @@ Loader page index
         transform: rotate(-360deg);
     }
 }
+
+@keyframes card-like {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}

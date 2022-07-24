@@ -113,7 +113,7 @@ main {
     background: -webkit-linear-gradient($colour-primary, $colour-secondary);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    transition: 2s;
+    @include card-like;
 }
 
 .card-image{

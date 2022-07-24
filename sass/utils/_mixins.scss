@@ -68,3 +68,9 @@
     animation-name: fadein;
     animation-timing-function: ease-in-out;
 }
+
+@mixin card-like {
+    animation-name: card-like;
+    animation-timing-function: ease-in-out;
+    animation-duration: 1500ms;
+}
