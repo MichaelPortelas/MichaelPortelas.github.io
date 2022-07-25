@@ -6,6 +6,7 @@
     @include media-between("tablet-up", "desktop-up"){
         display: flex;
         justify-content: space-around;
+        padding: 0rem;
     }
 
     @include media-min("desktop-up"){
@@ -33,9 +34,14 @@
             padding-right: 5px;
 
             i {
-                margin-right: 3px;
+                margin: 0rem;
+                padding: 0rem 0.3rem
             }
 
+        }
+
+        @include media-min("desktop-up"){
+            padding-right: 1rem;
         }
           
         a{
