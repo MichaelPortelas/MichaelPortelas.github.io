@@ -680,6 +680,11 @@ p {
     font-size: 18px;
 }
 
+#nous{
+    font-size: 22px;
+    font-weight: 600;
+}
+
 .txt-title{
     font-size: 22px;
     font-weight: 500;
@@ -718,7 +723,7 @@ p {
 .social {
     max-width: 400px;
     margin: auto auto auto auto;
-}
+} 
 
 h2 {
     font-size: 22px;
