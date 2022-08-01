@@ -677,7 +677,23 @@ a {
 }
 
 p {
-    font-size: 11px;
+    font-size: 18px;
+}
+
+.txt-title{
+    font-size: 22px;
+    font-weight: 500;
+}
+
+.txt-citation{
+    font-size: 18px;
+    font-weight: 550;
+    font-style: italic;
+}
+
+.txt-title-lighter{
+    font-size: 20px;
+    font-weight:lighter;
 }
 
 .tight-width-whitespace {
