@@ -1,3 +1,22 @@
+# BEGIN Cache-Control Headers
+<IfModule mod_headers.c>
+    <FilesMatch "\.(ico|jpe?g|png|gif|swf|css|gz)$">
+        Header set Cache-Control "max-age=2592000, public"
+    </FilesMatch>
+    <FilesMatch "\.(js)$">
+        Header set Cache-Control "max-age=2592000, private"
+    </FilesMatch>
+    <filesMatch "\.(html|htm)$">
+        Header set Cache-Control "max-age=7200, public"
+    </filesMatch>
+    # Enleve le cache pour les ressources dynamiques
+    <FilesMatch "\.(pl|php|cgi|spl|scgi|fcgi)$">
+        Header unset Cache-Control
+    </FilesMatch>
+</IfModule>
+# END Cache-Control Headers
+
+# BEGIN Expires Headers
 <IfModule mod_expires.c>
   ExpiresActive On
 
@@ -22,11 +41,17 @@
   ExpiresByType application/font-woff "access plus 1 year"
 
   # CSS, JavaScript
-  ExpiresByType text/css "access plus 1 year"
-  ExpiresByType text/javascript "access plus 1 year"
-  ExpiresByType application/javascript "access plus 1 year"
+  ExpiresByType text/css "access plus 1 month"
+  ExpiresByType text/x-javascript "access plus 1 month"
+  ExpiresByType application/javascript "access plus 1 month"
 
   # Others
-  ExpiresByType application/pdf "access plus 1 year"
+  ExpiresByType application/pdf "access plus 1 month"
   ExpiresByType image/vnd.microsoft.icon "access plus 1 year"
+  ExpiresByType application/x-shockwave-flash "access plus 1 month"
+  ExpiresByType image/x-icon "access plus 1 year"
+
+  # Default
+  ExpiresDefault "access plus 2 days"
 </IfModule>
+# END Expires Headers
